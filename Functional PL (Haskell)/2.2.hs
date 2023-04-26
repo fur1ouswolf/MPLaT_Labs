@@ -1,6 +1,3 @@
-f :: [String] -> String
-f list = list[(joseph (length list) 5) - 1]
-
 joseph :: Integer -> Integer -> Integer
 joseph n k | n > 1 = ((joseph (n - 1) k + k - 1) `mod` n) + 1
            | otherwise = 1
