@@ -56,9 +56,3 @@ func main() {
 	fmt.Println("Points counter:", count(1, 90, res))
 	fmt.Println("170 points:", count2(170, res), "tasks")
 }
-
-// 1-81 - 157 баллов
-// 97-99 - 9 баллов
-// 101 - 3 балла
-// 112 - 3 балла
-// Всего: 172
