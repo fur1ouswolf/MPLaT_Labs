@@ -33,7 +33,6 @@ struct tcp_awaitable
                 h.resume();
                 return;
             }
-            //send(sockfd_, &symbol_, 1, 0);
 
             // Receive the response from the server
             char response;
@@ -75,9 +74,7 @@ struct Async
 };
 
 Async task(int sockfd, char input) {
-    //std::cout << "Enter task. Symbol: " << input << std::endl;
     co_await tcp_awaitable(sockfd, input);
-    //std::cout << "Exit task" << std::endl;
 }
 
 int main() {
